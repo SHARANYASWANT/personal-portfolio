@@ -10,6 +10,11 @@ import { DiGithub } from 'react-icons/di'
 import { DiMysql } from 'react-icons/di'
 import { animate, motion } from "framer-motion"
 import { MdOpacity } from 'react-icons/md'
+import { SiNestjs } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+
 
 const icon = (duration) => ({
     initial: {y:-10},
@@ -51,10 +56,19 @@ const Technology = () => {
                 <DiJava className='text-7xl text-red-400'/>
             </motion.div>
             <motion.div  variants={icon(1)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <DiGithub className='text-7xl text-white'/>
+                <BiLogoPostgresql className='text-7xl text-white'/>
             </motion.div>
             <motion.div  variants={icon(7)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <DiMysql className='text-7xl text-cyan-400'/>
+            </motion.div>
+            <motion.div  variants={icon(4)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <SiMongodb className='text-7xl text-green-400'/>
+            </motion.div>
+            <motion.div  variants={icon(2)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <SiNestjs className='text-7xl text-red-400'/>
+            </motion.div>
+            <motion.div  variants={icon(8)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <FaNodeJs className='text-7xl text-blue-400'/>
             </motion.div>
         </motion.div>
     </motion.div>
